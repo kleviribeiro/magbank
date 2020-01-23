@@ -1,35 +1,123 @@
 :root {
     --mag-main-color: #7b34b1;
-    --mag-secundary-color: #f05656;
+    --mag-secondary-color: #f05656;
+    --mag-copy-color: #535353;
 }
 
 .mag-bg-primary {
     background-color: var(--mag-main-color);
 }
 
-.mag-border-bottom-secundary{
-    border-bottom: var(--mag-secundary-color) solid .1875rem;
+.mag-border-bottom-secondary {
+    border-bottom: var(--mag-secondary-color) solid .1875rem;
+}
+
+.mag-banner-copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.mag-banner-copy .row {
+    height: 100%;
+} 
+
+.mag-magic-pay-logo {
+    max-width: 20rem;
+    height: auto;
+    align-self: end;
+}
+
+.mag-credit-card {
+    padding-top: 4rem;
+    padding-bottom: 5.6rem;
+    color: var(--mag-copy-color);
+    font-size: 1.375rem;
+}
+
+.mag-credit-card h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.mag-credit-card i {
+    font-size: 1.875rem;
+}
+
+.mag-text-primary {
+    color: var(--mag-main-color);
+}
+
+.mag-text-secondary {
+    color: var(--mag-secondary-color);
+}
+
+.mag-card-footer {
+    background-color: unset;
+    border-top: unset;
+}
+
+.mag-btn-primary {
+    background-color: var(--mag-secondary-color);
+    color: #fff;
+}
+
+.mag-btn-primary:hover {
+    filter: grayscale(30%);
+    color: #fff;
+}
+
+.mag-btn-success {
+    background-color: #00b048;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.mag-btn-success:hover {
+    filter: grayscale(30%);
+    color: #fff;
+    box-shadow: 0 1rem 0.5rem #0003;
+}
+
+.mag-products {
+    padding: 0 0.9375rem;
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-brand img{
+    .navbar-brand img {
         width: 8.75rem;
         height: auto;
     }
-    .mag-nav-btn-group{
+
+    .mag-nav-btn-group {
         display: grid;
         gap: 1rem;
         padding: 1rem 0;
-        
     }
 
-    .mag-nav-btn-border{
+    .mag-nav-btn-border {
         border-radius: .25rem!important;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .navbar-brand{
+    .navbar-brand {
         margin-right: 6.25rem;
+    }
+
+    .mag-magic-pay-logo {
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .mag-credit-card {
+        padding-top: 7rem;
+        padding-bottom: 9.68rem;
+    }
+
+    .mag-credit-card h2 {
+        font-size: 3.5rem;
     }
 }

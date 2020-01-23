@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,23 +8,27 @@
     <title>MagBank</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/solid.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark mag-bg-primary mag-border-bottom-secundary">
+        <nav class="navbar navbar-expand-md navbar-dark mag-bg-primary mag-border-bottom-secondary">
             <a class="navbar-brand" href="#">
                 <img src="assets/logo-magbank.png" alt="MagBank">
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Cartão</a>
                     </li>
                     <li class="nav-item">
@@ -36,24 +40,190 @@
                 </ul>
 
                 <div class="btn-group mag-nav-btn-group" role="group" aria-label="Button group with nested dropdown">
-                   
 
                     <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-light mag-nav-btn-border dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button id="btnGroupDrop1" type="button"
+                            class="btn btn-outline-light mag-nav-btn-border dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             Acesse minha conta
                         </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <a class="dropdown-item" href="#">Pessoa Física</a>
-                            <a class="dropdown-item" href="#">Pessoa Jurídica</a>
+                            <a class="dropdown-item" href="#">
+                                Pessoa Física
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Pessoa Jurídica
+                            </a>
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-outline-light mag-nav-btn-border">Abra sua conta</button>
+                    <button type="button" class="btn btn-outline-light mag-nav-btn-border">
+                        Abra sua conta
+                    </button>
+
                 </div>
             </div>
         </nav>
+
+        <section class="mag-banner">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Primeiro Slide">
+                        </picture>
+
+                        <div class="container-fluid mag-banner-copy">
+                            <div class="row align-items-md-center justify-items-center">
+                                <div class="col-12 col-md-6 text-center text-md-right">
+                                    <img src="assets/logo-magic-pay.png" alt="Magic Pay"
+                                        class="img-fluid mag-magic-pay-logo mt-5">
+                                </div>
+                                <div class="col-12 col-md-6 text-center text-md-left">
+                                    <p class="text-light mb-2 mb-md-1">
+                                        Pague suas contas pelo APP
+                                    </p>
+                                    <button class="btn btn-outline-light btn-lg px-5">
+                                        Abra sua conta
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Primeiro Slide">
+                        </picture>
+                    </div>
+
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Primeiro Slide">
+                        </picture>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
     </header>
+
+    <section class="container mag-credit-card">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+
+                <h2 class="mt-md-4 mag-text-primary">Cartão de Crédito</h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row my-3">
+                            <div class="col-2 text-center px-0">
+                                <i class="fas fa-credit-card mag-text-secondary"></i>
+                            </div>
+                            <div class="col-10 pl-0">
+                                Crédito Pessoal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row my-3">
+                            <div class="col-2 text-center px-0">
+                                <i class="fas fa-mobile mag-text-secondary"></i>
+                            </div>
+                            <div class="col-10 pl-0">
+                                APP
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row my-3">
+                            <div class="col-2 text-center px-0">
+                                <i class="fas fa-shopping-cart mag-text-secondary"></i>
+                            </div>
+                            <div class="col-10 pl-0">
+                                Pagamentos Online
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row my-3">
+                            <div class="col-2 text-center px-0">
+                                <i class="fas fa-wallet mag-text-secondary"></i>
+                            </div>
+                            <div class="col-10 pl-0">
+                                Carteira Digital
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <img class="img-fluid" src="assets/credit-card.png" alt="Cartão de Crédito">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mag-products">
+        <div class="card-deck mt-5">
+            <div class="card col-12 col-md-4 px-0">
+                <img class="card-img-top" src="assets/card1.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem Ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, quisquam
+                        veniam minima error nisi quas. Nulla voluptas eos, quia possimus soluta nostrum, inventore quas
+                        sapiente exercitationem odio nemo ullam adipisci?</p>
+                </div>
+                <div class="card-footer mag-card-footer">
+                    <a href="#" class="btn mag-btn-primary">Peça já</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 px-0">
+                <img class="card-img-top" src="assets/card2.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem Ipsum</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam.
+                        Molestias rem animi totam neque! Cupiditate, numquam fuga.</p>
+                </div>
+                <div class="card-footer mag-card-footer">
+                    <a href="#" class="btn mag-btn-primary">Peça já</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 px-0">
+                <img class="card-img-top" src="assets/card3.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-footer mag-card-footer">
+                    <a href="#" class="btn mag-btn-primary">Peça já</a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center py-5">
+            <a href="#" class="btn mag-btn-success btn-lg px-5 py-3">Abra sua conta</a>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
